@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap");
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+  /* border: 2px solid rgb(219, 191, 11); */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+}
+
+.left {
+  /* border: 2px solid rgb(219, 11, 11); */
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left h1 {
+  font-family: "Bona Nova SC", serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: larger;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.right {
+  /* border: 2px solid rgb(8, 232, 179); */
+  width: 70%;
+  /* height: 100%; */
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+.icon {
+  display: none;
+}
+.right ul {
+  height: 100%;
+  /* border: 2px solid rgb(8, 232, 179); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Bona Nova SC", serif;
+}
+
+.inactive-link:hover {
+  color: rgb(219, 191, 11);
+}
+.active-link:hover {
+  color: rgb(219, 191, 11);
+}
+.active-link {
+  /* color: rgb(219, 11, 11); */
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.inactive-link {
+  /* color: rgb(219, 11, 11); */
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: rgb(219, 191, 11);
+}
+@media screen and (max-width: 850px) {
+  .navbar {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .navbar .left {
+    width: 70%;
+    /* border: 2px solid rgb(219, 11, 11); */
+  }
+  .navbar .left h1 {
+    text-align: center;
+    font-size: 3vh;
+  }
+
+  .right {
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(219, 191, 11);
+    height: 100vh;
+    overflow: scroll;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    display: none;
+    z-index: 1;
+  }
+  .active-link {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .right ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .icon {
+    display: block;
+    right: 10px;
+    /* border: 2px solid rgb(3, 1, 1); */
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+  }
+  .icon i {
+    font-size: 10vw;
+    color: yellow;
+  }
+  .list {
+    display: block;
+  }
+
+  .active:hover {
+    text-decoration: underline;
+  }
+  .navbar a{
+    text-decoration: none;
+    color: white;
+  }
+}

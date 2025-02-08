@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+
+.getapp{
+    width: 90%;
+    height: 80vh;
+    /* background-color: ; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    font-family: "Bona Nova SC", serif;
+    color: black;
+    text-align: center;
+}
+.card{
+    background-color: gray;
+    color: black;
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    border-radius:20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #f4f4f4;
+    border: 1px solid black;
+}
+
+.input{
+    width: 50%; 
+    background-color: yellow;
+    font-family: "Bona Nova SC", serif;
+   
+    margin-top: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 850px) {
+    .getapp{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card h1{
+        font-size: 5vw;
+    }
+    .card p{
+        font-size: 3vw;
+    }
+    .input{
+        width: 30vw;
+        font-size: 3vw;
+    }
+}
