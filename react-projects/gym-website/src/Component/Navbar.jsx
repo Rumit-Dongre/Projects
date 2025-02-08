@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import '../styles/navbar.css'
 import { Link, NavLink } from 'react-router'
+import { motion } from "motion/react"
 
 
 const Navbar = () => {
@@ -25,12 +26,22 @@ const Navbar = () => {
         <>
             <nav className='navbar'>
 
-                <div className='left'>
+                <motion.div className='left'
+                    initial={{
+                        y:-100
+                    }}
+                    animate={{
+                        y:0
+                    }}
+                    transition={{
+                        duration:2
+                    }}
+                >
                     <Link to={'/'}>
                     <h1>Fitness GYM</h1>
                     </Link>
 
-                </div>
+                </motion.div>
 
                 <div ref={hm} className="icon">
 
@@ -60,12 +71,14 @@ const Navbar = () => {
 
 
 
-                        <NavLink
+                        <motion.NavLink
+                            
+                            
                             to={'/'}
                             className={({ isActive }) => isActive ? "active-link" : "inactive-link"}
                         >
                             Home
-                        </NavLink>
+                        </motion.NavLink>
 
                         <NavLink
                             className={({ isActive }) => isActive ? "active-link" : "inactive-link"}
